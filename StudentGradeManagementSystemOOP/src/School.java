@@ -40,8 +40,8 @@ public class School{
     public String toString() {
         return String.valueOf(courses)
         		+ "\n"
-			    + String.valueOf(activeYearStudents)
+			    + String.valueOf(activeYearStudents.toString())
 			    + "\n" 
-			    + String.valueOf(passiveYearStudents);
+			    + String.valueOf(passiveYearStudents.toString());
     }
 }
