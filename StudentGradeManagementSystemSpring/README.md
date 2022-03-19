@@ -1,4 +1,4 @@
-# Creating Tree
+# Student Grade Management with Spring Boot
 
 This project has APIs about student grade management.
 
