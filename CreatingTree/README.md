@@ -12,8 +12,9 @@ For example;
     -> The second parameter is the information of how many steps the tree will consist.
 
 Sample Output;
-
+```
 ^
 ^^^
 ^^^^^
 ^^^^^^^
+```
