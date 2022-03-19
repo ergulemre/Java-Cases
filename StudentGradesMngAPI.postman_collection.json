@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "9a2efce3-411a-430a-abd1-270dc3a0f17d",
+		"name": "StudentGradesMngAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Assign Course to Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/assign/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"assign",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Course",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseName\":\"Chemistry\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/course/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"course",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/course/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"course",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Course to Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentName\":\"Emre\",\r\n    \"assignedCourseId\":1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/course/assign/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"course",
+						"assign",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student Grades",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\":1,\r\n    \"schoolYear\":20192020,\r\n    \"courseId\":1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/student/grades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"student",
+						"grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Student Grades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/student/grades/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"student",
+						"grades",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
